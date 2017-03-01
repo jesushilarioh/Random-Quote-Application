@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(39, 62, 71);
+}
+.message{
+  background-color:black;
+  border: none;
+  opacity: .8;
+  color: white;
+  padding:30px;
+
+
+}
+h2{
+  color:white;
+  text-shadow: 5px 6px 13px black;
+  padding: 20px;
+
+}
+
+.btn{
+  margin:20px
+}
+.footer{
+  position: absolute;
+  padding-bottom: 20px;
+  opacity:  ;
+
+  bottom:0;
+  color: white;
+}
+a{
+  color: white;
+}
