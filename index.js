@@ -39,7 +39,7 @@
             const quoteText = document.getElementById("quoteText"),
                 authorText = document.getElementById("authorText"),
                 twitterLink = document.getElementById("twitterLink"),
-                twitterURL = 'https://twitter.com/intent/tweet?text="';
+                twitterURL = 'https://twitter.com/intent/tweet?text=';
 
             let quote = '"' + JSON.parse(this.responseText).quote + '"',
                 author = JSON.parse(this.responseText).author,
