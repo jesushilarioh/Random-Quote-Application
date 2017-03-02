@@ -22,7 +22,6 @@
         //call (open, readystate, and send) methods
         httpRequest.open(method, url, true);
         httpRequest.onreadystatechange = requestStatus;
-
         httpRequest.send();
     }
 
@@ -42,18 +41,22 @@
                 twitterURL = 'https://twitter.com/intent/tweet?text=';
 
             let quote = '"' + JSON.parse(this.responseText).quote + '"',
+                partOfQuote = quote.slice(0, 68),
                 author = JSON.parse(this.responseText).author,
                 link = JSON.parse(this.responseText).permalink,
-                twitterString = quote + ' --' + author + ' @jesushilarioh';
+                twitterString = partOfQuote + '" --' + author + ' ' + link + ' @jesushilarioh';
 
             quoteText.textContent = quote;
             authorText.textContent = author;
             twitterLink.href = twitterURL + twitterString;
 
-            console.log(twitterString.length);
-
+            changeBackground();
         }
+    }
 
+    function changeBackground() {
+        const bodyTag = document.body;
+        bodyTag.style.backgroundColor = "#99B898";
     }
 
 
