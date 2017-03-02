@@ -5,6 +5,8 @@
 
     // Add api request as an event listener
     document.getElementById("newQuote").addEventListener("click", handleApi);
+    window.addEventListener("load", handleApi);
+
 
     //***********************************************
     // handleApi Function handles the api request   *
@@ -16,15 +18,11 @@
         // Local Variables
         let method = "GET",
             url = "http://quotes.stormconsultancy.co.uk/random.json";
-        //http://quotes.stormconsultancy.co.uk/random.json
 
         //call (open, readystate, and send) methods
         httpRequest.open(method, url, true);
-        httpRequest.onreadystatechange = function() {
-            if (httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200) {
-                console.log(httpRequest.responseText);
-            }
-        };
+        httpRequest.onreadystatechange = requestStatus;
+
         httpRequest.send();
     }
 
@@ -33,6 +31,30 @@
     //* requestStatus function handles the actions to be perfomed  *
     //* when the document is read                                  *
     //**************************************************************
+
+    function requestStatus() {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+
+            console.log(JSON.parse(this.responseText).permalink);
+            const quoteText = document.getElementById("quoteText"),
+                authorText = document.getElementById("authorText"),
+                twitterLink = document.getElementById("twitterLink"),
+                twitterURL = 'https://twitter.com/intent/tweet?text="';
+
+            let quote = '"' + JSON.parse(this.responseText).quote + '"',
+                author = JSON.parse(this.responseText).author,
+                link = JSON.parse(this.responseText).permalink,
+                twitterString = quote + ' --' + author + ' @jesushilarioh';
+
+            quoteText.textContent = quote;
+            authorText.textContent = author;
+            twitterLink.href = twitterURL + twitterString;
+
+            console.log(twitterString.length);
+
+        }
+
+    }
 
 
 
