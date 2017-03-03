@@ -7,6 +7,16 @@
 
         <!-- Bootstrap-->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Amiko|Mada" rel="stylesheet">
+
+        <!--
+            font-family: 'Amiko', sans-serif;
+            font-family: 'Mada', sans-serif;
+        -->
+
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/6b8e78b80a.js"></script>
         <!-- index.css -->
         <link rel="stylesheet" href="index.css">
 
@@ -16,18 +26,17 @@
 
         <!-- container-fliud -->
         <div class="container-fluid">
-            <div class = "row text-center">
-                <h2 id="title">Random Quote Machine.</h2>
+            <div class = "row" id="title">
+                <h1>Random Quote Machine.</h1>
             </div>
 
             <!-- main content -->
-            <div class = "row text-center">
-                <div class = "col-md-12 well message well">
+            <div class = "row">
+                <div class = "col-md-12 well message">
                     <blockquote>
-                        <p class="quoteText" id="quoteText"></p>
+                        <h2 id="quoteText"></h2>
                         <footer>
-                            <cite title="Source Title">
-                            <p class="authorText" id="authorText"></p>
+                            <h4 class="authorText" id="authorText"></h4>
                         </footer>
                    </blockquote>
                </div>
@@ -37,17 +46,17 @@
            <!-- Buttons -->
            <div class = "row text-center">
                <div class = "col-md-12">
-                   <button type="button" class="btn btn-primary" id="newQuote">New Quote</button>
+                   <button type="button" class="btn btn-success" id="newQuote">New Quote</button>
                    <a class="twitterLink" id="twitterLink"  data-size="large" target="_blank">
-                       <button type="button" class="btn btn-primary">Tweet it!</button>
+                       <button type="button" class="btn btn-primary"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>  Tweet!</button>
                    </a>
                </div>
            </div>
            <!-- /Buttons -->
 
            <!-- footer -->
-           <div class="row text-right">
-               <div class="footer col-md-12">CodePen by:  <strong><a href="http://www.twitter.com/jesushilarioh/" target="_blank">Jesus Hilario Hernandez</a></strong>.
+           <div class="row">
+               <div class="footer col-md-12">Created by:  <strong><a href="http://www.twitter.com/jesushilarioh/" target="_blank">Jesus Hilario Hernandez</a></strong>.
                </div>
            </div>
            <!-- /footer -->

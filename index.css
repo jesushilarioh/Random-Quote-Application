@@ -1,40 +1,46 @@
 /* Elements */
-body{
+
+body {
     background-color: rgb(39, 62, 71);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
-h2{
-  color:white;
-  text-shadow: 5px 6px 13px black;
-  padding: 20px;
+
+a {
+    color: white;
 }
-a{
-  color: white;
-}
+
 
 /* Classes */
-.message{
-  background-color:black;
-  border: none;
-  opacity: .8;
-  color: white;
-  padding:30px;
-}
-.btn{
-  margin:20px
-}
-.footer{
-  position: absolute;
-  padding-bottom: 20px;
-  bottom:0;
-  color: white;
+
+.message {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    font-family: 'Amiko', sans-serif;
+    color: white;
+    padding: 30px;
+    font-size: 56px;
 }
 
-/* Color Pallete
- * #99B898
- * #FECEA8
- * #FF847C
- * #E84A5F
- * #2A363B
- */
+.btn {
+    margin: 20px
+}
+
+.footer {
+    text-align: center;
+    padding: 100px 20px 20px 20px;
+    color: white;
+}
+
 
 /* IDs*/
+
+#title {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 2px 2px 2px black;
+    padding: 0 20px 20px 20px;
+    text-align: right;
+    font-family: 'Mada', sans-serif;
+}

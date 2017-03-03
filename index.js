@@ -46,7 +46,7 @@
                 link = JSON.parse(this.responseText).permalink,
                 twitterString = partOfQuote + '" --' + author + ' ' + link + ' @jesushilarioh';
 
-            quoteText.textContent = quote;
+            quoteText.innerHTML = quote;
             authorText.textContent = author;
             twitterLink.href = twitterURL + twitterString;
 
@@ -54,9 +54,17 @@
         }
     }
 
+    //***************************************************************
+    // changeBackground changes the background color when user      *
+    // clicks Get Quote button                                      *
+    //***************************************************************
     function changeBackground() {
-        const bodyTag = document.body;
-        bodyTag.style.backgroundColor = "#99B898";
+        const bodyTag = document.body,
+            color = ["Images/code1.png"];
+
+
+            bodyTag.style.backgroundImage = "url('"+ color[Math.floor(Math.random() * color.length)] + "')"; ;
+
     }
 
 
