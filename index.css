@@ -1,5 +1,4 @@
 /* Elements */
-
 body {
     background-color: rgb(39, 62, 71);
     background-size: cover;
@@ -11,10 +10,7 @@ body {
 a {
     color: white;
 }
-
-
 /* Classes */
-
 .message {
     background-color: rgba(0, 0, 0, 0.7);
     border: none;
@@ -23,20 +19,15 @@ a {
     padding: 30px;
     font-size: 56px;
 }
-
 .btn {
     margin: 20px
 }
-
 .footer {
     text-align: center;
     padding: 100px 20px 20px 20px;
     color: white;
 }
-
-
 /* IDs*/
-
 #title {
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 2px 2px 2px black;
