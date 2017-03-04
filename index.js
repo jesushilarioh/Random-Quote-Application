@@ -7,7 +7,6 @@
     document.getElementById("newQuote").addEventListener("click", handleApi);
     window.addEventListener("load", handleApi);
 
-
     //***********************************************
     // handleApi Function handles the api request   *
     // for forismatic to send us a random quote     *
@@ -24,7 +23,6 @@
         httpRequest.onreadystatechange = requestStatus;
         httpRequest.send();
     }
-
 
     //**************************************************************
     //* requestStatus function handles the actions to be perfomed  *
@@ -50,25 +48,7 @@
             authorText.textContent = author;
             twitterLink.href = twitterURL + twitterString;
 
-            changeBackground();
         }
     }
-
-    //***************************************************************
-    // changeBackground changes the background color when user      *
-    // clicks Get Quote button                                      *
-    //***************************************************************
-    function changeBackground() {
-        const bodyTag = document.body,
-            color = ["Images/code1.png"];
-
-
-            bodyTag.style.backgroundImage = "url('"+ color[Math.floor(Math.random() * color.length)] + "')"; ;
-
-    }
-
-
-
-
 
 })();
