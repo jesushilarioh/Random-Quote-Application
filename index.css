@@ -1,12 +1,12 @@
 /* Elements */
 body {
     background-color: rgb(39, 62, 71);
+    background-image: url("Images/code1.png");
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: center;
 }
-
 a {
     color: white;
 }
