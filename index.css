@@ -12,12 +12,14 @@ a {
 }
 /* Classes */
 .message {
+    tex
     background-color: rgba(0, 0, 0, 0.7);
     border: none;
     font-family: 'Amiko', sans-serif;
     color: white;
     padding: 30px;
     font-size: 56px;
+
 }
 .btn {
     margin: 20px
