@@ -1,4 +1,4 @@
-(function() {
+(function () {
 
     //Global variables
     var httpRequest;
@@ -23,11 +23,6 @@
         httpRequest.onreadystatechange = requestStatus;
         httpRequest.send();
     }
-
-    //**************************************************************
-    //* requestStatus function handles the actions to be perfomed  *
-    //* when the document is read                                  *
-    //**************************************************************
 
     function requestStatus() {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
